@@ -1,0 +1,14 @@
+@mixin style-font{
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: $font-roboto;
+}
+@mixin button{
+  background-color: #ffffff;
+  font-size: 18px;
+  color: #612316;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+}
