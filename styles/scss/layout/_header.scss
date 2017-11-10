@@ -2,35 +2,35 @@
   max-width: 99%;
   padding: 65px 0 65px 0;
   background-color: #edeff1;
+  height: auto;
 }
 .wrapper-header{
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navigation{
   ul {
     display: flex;
     li{
+      max-height: 51px;
       margin-right: 45px;
       font-size: 18px;
       font-family: 'Roboto Slab', serif;
       font-weight: 400;
       &:last-child{
-        margin-right: none;
-      }
-      &:active{
-        background-color: #dd4b2b;
-        color: white;
-        border-radius: 100px;
-        padding: 18px;
+        margin-right: 0;
       }
       a{
         color: #31353e;
         text-decoration: none;
+        @include hvr-fade;
       }
     }
   }
 }
-
+.navbar button{
+  display: none;
+}

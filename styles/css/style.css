@@ -58,6 +58,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 99%;
   padding: 65px 0 65px 0;
   background-color: #edeff1;
+  height: auto;
 }
 
 .wrapper-header {
@@ -65,29 +66,113 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navigation ul {
   display: flex;
 }
 .navigation ul li {
+  max-height: 51px;
   margin-right: 45px;
   font-size: 18px;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
 }
 .navigation ul li:last-child {
-  margin-right: none;
-}
-.navigation ul li:active {
-  background-color: #dd4b2b;
-  color: white;
-  border-radius: 100px;
-  padding: 18px;
+  margin-right: 0;
 }
 .navigation ul li a {
   color: #31353e;
   text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  padding: 18px;
+}
+.navigation ul li a:hover, .navigation ul li a:focus, .navigation ul li a:active {
+  background-color: #dd4b2b;
+  color: white;
+  border-radius: 100px;
+  padding: 18px;
+  outline: none;
+}
+
+.navbar button {
+  display: none;
+}
+
+.top {
+  background-color: #d75d0e;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-footer {
+  text-align: center;
+}
+.list-footer li {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+}
+.list-footer li a {
+  color: white;
+  text-decoration: none;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url("../../images/bottom-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bottom:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: -moz-linear-gradient(top, transparent 0%, transparent 1%, rgba(0, 0, 0, 0.65) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, transparent 0%, transparent 1%, rgba(0, 0, 0, 0.65) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+@media \0screen\,screen {
+  .bottom .bottom:before {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00000000", endColorstr="#ff000000", GradientType=0);
+  }
+}
+
+.bottom p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  color: white;
+  max-width: 648px;
+  text-align: center;
+}
+.bottom p a {
+  color: white;
 }
 
 .welcome {
@@ -169,7 +254,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-right: 30px;
 }
 .menu-welcome li:last-child {
-  margin-right: none;
+  margin-right: 0;
 }
 .menu-welcome li h2 {
   font-size: 30px;
@@ -199,6 +284,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 213px;
   height: 54px;
   margin-top: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.welcome-info button:focus {
+  outline: none;
+}
+.welcome-info button:hover, .welcome-info button:focus, .welcome-info button:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .wrapper {
@@ -218,7 +319,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .section-header h2 {
   color: #31353e;
-  font-size: "Roboto Slab", serif;
+  font-family: "Roboto Slab", serif;
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 85px;
@@ -261,9 +362,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 50px;
   outline: none;
   border: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
   width: 179px;
   height: 54px;
   margin-top: 40px;
+}
+.list-news footer button:focus {
+  outline: none;
+}
+.list-news footer button:hover, .list-news footer button:focus, .list-news footer button:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .list-news footer span {
@@ -331,8 +448,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 50px;
   outline: none;
   border: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
 }
-
+.newsletter form button:focus {
+  outline: none;
+}
+.newsletter form button:hover, .newsletter form button:focus, .newsletter form button:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #dd4b2b;
+  color: white;
+}
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
 .letter {
   max-width: 508px;
   margin: 0 auto;
@@ -375,8 +528,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 50px;
   outline: none;
   border: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
   width: 213px;
   height: 54px;
+  background-color: #dd4b2b;
+  color: white;
+}
+.list-dolor button:focus {
+  outline: none;
+}
+.list-dolor button:hover, .list-dolor button:focus, .list-dolor button:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   background-color: #dd4b2b;
   color: white;
 }

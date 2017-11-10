@@ -17,6 +17,7 @@
   button{
     outline: none;
     @include button;
+    @include hvr-back-pulse;
     width: 213px;
     height: 54px;
     background-color: #dd4b2b;

@@ -47,6 +47,17 @@
       width: 213px;
       height: 54px;
       @include button;
+      @include hvr-back-pulse;
+    }
+    @-webkit-keyframes hvr-back-pulse {
+      50% {
+        background-color: rgba(32, 152, 209, 0.75);
+      }
+    }
+    @keyframes hvr-back-pulse {
+      50% {
+        background-color: rgba(32, 152, 209, 0.75);
+      }
     }
   }
 }

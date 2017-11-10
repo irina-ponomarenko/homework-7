@@ -12,7 +12,7 @@
   margin: 0 auto;
   h2{
     color: #31353e;
-    font-size: $font-roboto;
+    font-family: $font-roboto;
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 85px;
@@ -49,6 +49,7 @@
     }
     button{
       @include button;
+      @include hvr-grow;
       width: 179px;
       height: 54px;
       margin-top: 40px;
