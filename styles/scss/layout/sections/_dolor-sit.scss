@@ -10,7 +10,7 @@
   }
     &:nth-child(2n){
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: row-reverse !important;
       align-items: center;
     }
   }
@@ -43,5 +43,10 @@
   img{
     border:1px solid #bfbfbf;
   }
+}
+.list-dolor li:nth-child(2n) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 

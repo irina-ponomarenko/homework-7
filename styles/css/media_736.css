@@ -1,14 +1,17 @@
-@media only screen and (max-device-width: 414px) {
+@media only screen and (max-device-width: 736px) {
     body {
-        max-width: 400px;
+        max-width: 100%;
         height: auto;
     }
     .welcome-section {
-        width: 99%;
+        width: 100%;
         height: auto;
     }
+    .container{
+        min-width: 100%;
+    }
 }
-@media only screen and (max-device-width: 414px) {
+@media only screen and (max-device-width: 736px) {
     .wrapper-header {
         max-width: 100%;
         margin: 0 auto;
@@ -17,15 +20,15 @@
         align-items: center;
     }
 }
-@media only screen and (max-device-width: 414px) {
+@media only screen and (max-device-width: 736px) {
     .header {
-        padding: 15px 0 15px 0;
+        padding: 20px 0 20px 0;
     }
     .header img{
-        width: 92px;
+        width: 132px;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 736px) {
 
     #btn-menu + label{
         display: inline-block;
@@ -37,52 +40,63 @@
         display: block;
     }
 }
-@media only screen and (max-device-width: 414px) {
+@media only screen and (max-device-width: 736px) {
     .welcome{
+        width: 100%;
         height: auto;
-        width: auto;
     }
     .welcome-info h1{
-        margin-top: 20px;
-        font-size: 25px;
+        margin-top: 30px;
+        font-size: 35px;
     }
     .welcome-info p{
-        font-size: 18px;
+        font-size: 20px;
     }
 }
-@media only screen and (max-device-width: 414px) {
+@media only screen and (max-device-width: 736px) {
     .menu-welcome {
         display: flex;
-        flex-direction: column;
         margin-top: 45px;
     }
-    .menu-welcome li{
-        margin-right: auto;
+    .menu-welcome li {
+        flex-direction: column;
+        align-self: baseline;
+        margin-right: 35px;
+    }
+
+    .menu-welcome li:last-child{
+        margin-right: 0;
     }
     .menu-welcome li h2{
-        font-size: 18px;
-        margin: 10px 0 10px 0;
+        font-size: 20px;
+        margin: 15px 0 15px 0;
     }
     .menu-welcome li p{
-        font-size: 14px;
+        font-size: 15px;
         line-height: 30px;
     }
+    .welcome-photo{
+        width: auto;
+        margin: 0;
+    }
     .welcome-photo img{
-        border: 3px solid white;
+        width: auto;
+        border: 5px solid white;
     }
     .welcome-info button{
         margin-top: 30px;
         margin-bottom: 30px;
     }
 }
-@media only screen and (max-device-width: 414px) {
+@media only screen and (max-device-width: 736px) {
     .wrapper {
         padding-top: 45px;
         padding-bottom: 57px;
     }
 
     .section-header {
-        min-width: 400px;
+        text-align: center;
+        width: 100%;
     }
 
     .section-header h2 {
@@ -93,10 +107,15 @@
 
     .list-news {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
     }
 
     .list-news li {
+        margin-right: 35px;
+    }
+    .list-news li:last-child {
         margin-right: 0;
     }
 
@@ -117,7 +136,9 @@
     .newsletter {
         padding-bottom: 120px;
     }
-
+    .letter p{
+        margin: 0 20px 0 20px;
+    }
     .newsletter form {
         text-align: center;
         width: 350px;
@@ -133,24 +154,21 @@
         margin-top: 30px;
     }
 }
-@media only screen and (max-device-width: 414px){
-.about-dolor h2{
-    text-align: center;
-}
+@media only screen and (max-device-width: 736px){
+    .about-dolor h2{
+        text-align: center;
+    }
     .about-dolor p{
         font-size: 12px;
         margin-bottom: 20px;
     }
-    .dolor:nth-child(2n + 1){
+    .dolor:nth-child(2n + 1),
+    .dolor:nth-child(2n){
         display: flex ;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .dolor:nth-child(2n) {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
+
     .dolor{
         margin: 0;
         padding: 0;
@@ -170,7 +188,7 @@
         width: 330px;
     }
 }
-@media only screen and (max-device-width: 414px){
+@media only screen and (max-device-width: 736px){
     .list-footer li{
         font-size: 14px;
     }

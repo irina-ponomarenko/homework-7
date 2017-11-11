@@ -66,7 +66,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 * {
@@ -76,7 +76,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 nav {
-  display: flex;
+  vertical-align: middle;
 }
 
 .list-menu {
@@ -543,7 +543,7 @@ nav {
 }
 .list-dolor li:nth-child(2n) {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row-reverse !important;
   align-items: center;
 }
 .list-dolor button {
@@ -608,4 +608,10 @@ nav {
 }
 .img-dolor img {
   border: 1px solid #bfbfbf;
+}
+
+.list-dolor li:nth-child(2n) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
