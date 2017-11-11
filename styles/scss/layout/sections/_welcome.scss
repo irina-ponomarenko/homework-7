@@ -94,7 +94,8 @@
     @include button;
     width: 213px;
     height: 54px;
-    margin-top: 80px;
+    margin-top: 40px;
     @include hvr-grow;
+    margin-bottom: 40px;
   }
 }
