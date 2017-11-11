@@ -154,21 +154,23 @@
         margin-top: 30px;
     }
 }
-@media only screen and (max-device-width: 736px){
-    .about-dolor h2{
+@media only screen and (max-device-width: 736px) {
+    .about-dolor h2 {
         text-align: center;
     }
-    .about-dolor p{
+
+    .about-dolor p {
         font-size: 12px;
         margin-bottom: 20px;
     }
+}
+@media only screen and (max-device-width: 736px){
     .dolor:nth-child(2n + 1),
     .dolor:nth-child(2n){
         display: flex ;
         flex-direction: column;
         flex-wrap: wrap;
     }
-
     .dolor{
         margin: 0;
         padding: 0;
@@ -181,8 +183,9 @@
         margin-bottom: 30px;
     }
     .img-dolor{
-        vertical-align: middle;
         margin: 0;
+        vertical-align: middle;
+
     }
     .img-dolor img{
         width: 330px;
