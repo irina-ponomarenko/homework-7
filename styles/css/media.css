@@ -146,10 +146,8 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .dolor:nth-child(2n) {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
+    .last-dolor{
+        display: block;
     }
     .dolor{
         margin: 0;

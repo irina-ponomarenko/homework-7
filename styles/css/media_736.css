@@ -168,7 +168,7 @@
     .dolor:nth-child(2n + 1),
     .dolor:nth-child(2n){
         display: flex ;
-        flex-direction: column;
+        flex-direction: column !important;
         flex-wrap: wrap;
     }
     .dolor{

@@ -544,7 +544,7 @@ nav {
 }
 .list-dolor li:nth-child(2n) {
   display: flex;
-  flex-direction: row-reverse !important;
+  flex-direction: row-reverse;
   align-items: center;
 }
 .list-dolor button {
@@ -609,10 +609,4 @@ nav {
 }
 .img-dolor img {
   border: 1px solid #bfbfbf;
-}
-
-.list-dolor li:nth-child(2n) {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
